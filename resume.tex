@@ -1,0 +1,191 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% can use \iftrue {block} \fi to pick and choose which details you want
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% For link formatting
+\usepackage{fancyhdr,graphicx,xcolor,colortbl}
+\usepackage{hyperref}
+
+
+% Set applicant's personal data for header
+\name{Ryan Elliott}
+\address{6736 Ridge Road \linebreak Marriottsville MD 21104}
+\contacts{443-340-0737 \linebreak rce3986@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+  % Change depending on the job
+  \begin{cvsection}{Objective}
+    
+    \begin{cvsubsection}{}{}{}
+      \iftrue
+      I am a student at the University of Maryland, College Park in my Senior year. I am seeking a position as a Software Engineer %
+      \fi
+      \iffalse
+      at AT\&T %
+      \fi
+      \iftrue
+      to further my skills in back end development and gain experience working with skilled developers.
+      \fi
+    \end{cvsubsection}
+    
+  \end{cvsection}
+
+  \begin{cvsection}{Employment}
+    \begin{cvsubsection}{Sunnyvale, CA}{Walmart}{Summer 2022}
+      \begin{center}
+        \begin{itemize*}
+          \item Software Engineering Intern
+          \item Walmart \texttt{+}
+          \item Back End
+          \item ~
+        \end{itemize*}
+      \end{center}
+      \begin{itemize}
+        \item Orchestration level proof of concept project using Java, Spring, Maven, and GraphQL.
+        \item Wrote project in Intellij and tested using Postman and Walmart's development web environment.
+        \item Agile process flow with two week sprints; JIRA for development planning and Confluence for documentation.
+        \item Receive HTTP request, authenticate request, call core API to retrieve necessary data, transform data for FE, %
+        and return fields specified by GraphQL query.
+        \item Used RestController annotated class for capturing HTTP request, Service annotated class for loading resources %
+        and building GraphQL wiring, and DataFetcher class for retrieving and transforming data from core.
+      \end{itemize}
+    \end{cvsubsection} 
+  \end{cvsection}
+
+  \begin{cvsection}{Languages, Technologies, Frameworks, and Environments}
+    \begin{cvsubsection}{}{}{}	
+      \begin{itemize*}
+        \item Python
+        \item Java
+        \item OCaml
+        \item C
+        \item Swift
+        \item Verilog
+        \item CAD
+        \item Inventor
+        \item GraphQL
+        \item Spring
+        \item Maven
+        \item Eclipse
+        \item Xcode
+        \item Intellij
+        \item Vivado
+        \item VSCode
+        \item Postman
+        \item Laravel
+        \item PHP
+      \end{itemize*}
+    \end{cvsubsection}
+  \end{cvsection}
+
+  \begin{cvsection}{Projects}
+    \begin{cvsubsection}{Team}{Activate}{Fall 2022}
+      \begin{itemize}
+        \item Tasked with providing a means for teachers to track attendance and participation in classes.
+        \item Built a web application with PHP Laravel framework on a Debian server.
+        \item Gained experience setting up Laravel and building a back end for a web application.
+        \item Gained experience with process, planning, and team coordination.
+      \end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Individual}{MyTrips}{Winter 2021}
+      \begin{itemize}
+        \item iOS app made entirely with Swift in Xcode.
+        \item This app can calculate a route given a start and end location and store that route on an iOS device.
+        \item Once routes are stored, they can be viewed, deleted, or exported as a .csv file.
+        \item Gained experience building basic iOS apps with both storyboards and programmatic front end.
+      \end{itemize}
+    \end{cvsubsection}
+    \iffalse
+    \begin{cvsubsection}{Team}{OSV}{Fall 2019}
+      \begin{itemize}
+        \item Engineering design project consisting of a team of six tasked with designing an OSV (over sand vehicle) to %
+        complete an obstacle course. 
+        \item Designed, built, tested, and presented our solution. 
+        \item I took a leadership role in the group and got very positive feedback from teammates for my contributions.
+      \end{itemize}
+    \end{cvsubsection}
+    \fi
+    \iffalse
+    \begin{cvsubsection}{Team}{CCCTC Senior Project}{Fall 2018}
+      \begin{itemize}
+        \item Engineering design project consisting of a team of three tasked with identifying a problem, designing a solution,%
+        building a product, and showcasing it.
+        \item Gained experience working in a team of engineers on a semester long project.
+      \end{itemize}
+    \end{cvsubsection}
+    \fi
+  \end{cvsection}
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{College Park, MD}{University of Maryland}{Fall 2019 -- Spring 2023}
+      \begin{center}
+        \begin{itemize*}
+          \item B.S. in Computer Engineering
+          \item GPA: 3.734
+          \item Academic Honors
+          \item ~
+        \end{itemize*}
+      \end{center}
+			\begin{itemize}
+        \item Year 4: Computational Methods, Foundations of Machine Learning
+        \item Year 3: Advanced Data Structures, Computer Organization and Design, Linear Algebra, Probability and Statistics, %
+        Circuits, Systems and Signal Theory, Verilog
+        \item Year 2: C, Assembly, Discrete Math, Algorithms, OCaml, Digital Logic Design, Signal Analysis
+        \item Year 1: Object Oriented Java, Data Structures
+			\end{itemize}
+		\end{cvsubsection}
+    \begin{cvsubsection}{Westminster, MD}{CC Career and Tech Center}{Fall 2017 / Fall 2018}
+      \begin{center}
+        \begin{itemize*}
+          \item Project Lead the Way - Engineering
+          \item ~
+        \end{itemize*}
+      \end{center}
+			\begin{itemize}
+        \item Year 2: Digital Electronics, CNC Milling, Robotics
+        \item Year 1: CAD, Workshop Machinery, Design
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+  \begin{cvsection}{Links}
+    \begin{cvsubsection}{}{}{}	
+      \begin{itemize*}
+        \item {\color{blue}\underline{\href{https://terpconnect.umd.edu/~ryane3/}{Personal Website}}}
+        \item {\color{blue}\underline{\href{https://www.linkedin.com/in/ryan-elliott-04a31721b/}{LinkedIn}}}
+        \item {\color{blue}\underline{\href{https://github.com/rce3986}{GitHub}}}
+      \end{itemize*}
+    \end{cvsubsection}
+  \end{cvsection}
+
+\end{document}
